@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub - Навигатор</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            text-align: center;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: #94a3b8;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Сетка для двух колонок */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Стиль карточек */
+        .ai-card {
+            background-color: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #f8fafc;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 1 / 1;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 20px -5px rgba(56, 189, 248, 0.3);
+        }
+
+        .logo-box {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #334155;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .logo-box img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+
+        .ai-name {
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .ai-desc {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            margin-top: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Моя AI Панель</h1>
+    <p class="subtitle">Быстрый доступ</p>
+
+    <div class="grid-container">
+
+        <a href="https://chatgpt.com" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/ChatGPT_logo_with_wordmark.svg" alt="ChatGPT">
+            </div>
+            <span class="ai-name">ChatGPT</span>
+            <span class="ai-desc">Текст и логика</span>
+        </a>
+
+        <a href="https://www.midjourney.com" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Midjourney_logo.png" alt="Midjourney">
+            </div>
+            <span class="ai-name">Midjourney</span>
+            <span class="ai-desc">Генерация фото</span>
+        </a>
+
+        <a href="https://lumalabs.ai/dream-machine" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://pbs.twimg.com/profile_images/1661445585863925760/1v0v3b9a_400x400.jpg" alt="Luma">
+            </div>
+            <span class="ai-name">Luma AI</span>
+            <span class="ai-desc">Создание видео</span>
+        </a>
+
+        <a href="https://suno.com" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://suno.com/favicon.ico" alt="Suno">
+            </div>
+            <span class="ai-name">Suno AI</span>
+            <span class="ai-desc">Генерация музыки</span>
+        </a>
+
+        <a href="https://musiclab.chromeexperiments.com" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://musiclab.chromeexperiments.com/Song-Maker/favicon.ico" alt="Music Lab">
+            </div>
+            <span class="ai-name">Music Lab</span>
+            <span class="ai-desc">Эксперименты со звуком</span>
+        </a>
+
+        <a href="https://runwayml.com" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://runwayml.com/favicon.ico" alt="Runway">
+            </div>
+            <span class="ai-name">Runway</span>
+            <span class="ai-desc">Монтаж и ИИ-видео</span>
+        </a>
+
+        <a href="https://elevenlabs.io" target="_blank" class="ai-card">
+            <div class="logo-box">
+                <img src="https://elevenlabs.io/favicon.ico" alt="ElevenLabs">
+            </div>
+            <span class="ai-name">ElevenLabs</span>
+            <span class="ai-desc">Озвучка голосом</span>
+        </a>
+
+    </div>
+
+</body>
+</html>
